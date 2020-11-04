@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <form action ="/delete" methods="POST">
+        <label for="animal_name">Animal Name:</label>
+        <select name="" id="">
+            {% for animal in all_animals %}
+            <option value="">{{animal.animal_name}}</option></select>
+            {% endfor %}
+    </form>
+{% endblock %}
